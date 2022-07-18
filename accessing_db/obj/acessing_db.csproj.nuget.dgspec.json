@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\programacao_avancada_csharp\\acessing_db\\acessing_db.csproj": {}
+    "E:\\Works\\CTEDS\\primeiro oferecimento\\compartilhado\\programacao_avancada_csharp\\accessing_db\\acessing_db.csproj": {}
   },
   "projects": {
-    "C:\\dev\\programacao_avancada_csharp\\acessing_db\\acessing_db.csproj": {
+    "E:\\Works\\CTEDS\\primeiro oferecimento\\compartilhado\\programacao_avancada_csharp\\accessing_db\\acessing_db.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\programacao_avancada_csharp\\acessing_db\\acessing_db.csproj",
+        "projectUniqueName": "E:\\Works\\CTEDS\\primeiro oferecimento\\compartilhado\\programacao_avancada_csharp\\accessing_db\\acessing_db.csproj",
         "projectName": "acessing_db",
-        "projectPath": "C:\\dev\\programacao_avancada_csharp\\acessing_db\\acessing_db.csproj",
-        "packagesPath": "C:\\Users\\SENAI\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\programacao_avancada_csharp\\acessing_db\\obj\\",
+        "projectPath": "E:\\Works\\CTEDS\\primeiro oferecimento\\compartilhado\\programacao_avancada_csharp\\accessing_db\\acessing_db.csproj",
+        "packagesPath": "C:\\Users\\saulo\\.nuget\\packages\\",
+        "outputPath": "E:\\Works\\CTEDS\\primeiro oferecimento\\compartilhado\\programacao_avancada_csharp\\accessing_db\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\SENAI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\saulo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

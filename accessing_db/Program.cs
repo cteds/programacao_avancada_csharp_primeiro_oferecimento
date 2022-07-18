@@ -63,8 +63,29 @@ namespace acessing_db
                         _product.Create(newProduct);
                         break;
 
+                    case "3":
+                        Console.WriteLine("\nDigite o código do produto que será alterado:");
+                        var idEdited = Console.ReadLine();
+                        Console.WriteLine("\nDigite o novo nome do produto:");
+                        var nameEdited = Console.ReadLine();
+                        Console.WriteLine("\nDigite a descrição do produto:");
+                        var descriptionEdited = Console.ReadLine();
+                        Console.WriteLine("\nDigite o preço do produto (somente valores):");
+                        var priceEdited = Convert.ToDecimal(Console.ReadLine());
+
+                        Product productEdited = new()
+                        {
+                            IdProduct = idEdited,
+                            Name = nameEdited,
+                            Description = descriptionEdited,
+                            Price = Convert.ToDecimal(priceEdited)
+                        };
+
+                        _product.Update(productEdited);
+                        break;
+
                     case "4":
-                        Console.WriteLine("Digite o código do produto que será deletado:");
+                        Console.WriteLine("\nDigite o código do produto que será deletado:");
                         var idRemoved = Console.ReadLine();
 
                         _product.Delete(idRemoved);

@@ -132,9 +132,34 @@ namespace acessing_db.Repositories
             return listProducts;
         }
 
+        /// <summary>
+        /// Edita um produto existente
+        /// </summary>
+        /// <param name="product">Objeto com os novos dados</param>
         public void Update(Product product)
         {
-            throw new NotImplementedException();
+            // Declara a SqlConnection con passando a string de conexão como parâmetro
+            using (SqlConnection con = new(stringConexao))
+            {
+                // Declara a query a ser executada
+                string queryUpdateBody = "UPDATE Products SET IdProduct = @IdProduct, Name = @Name, Description = @Description, Price = @Price WHERE IdProduct = @IdProduct";
+
+                // Declara o SqlCommand passando o comando a ser executado e a conexão
+                using (SqlCommand cmd = new(queryUpdateBody, con))
+                {
+                    // Passa os valores dos parâmetros
+                    cmd.Parameters.AddWithValue("@IdProduct", product.IdProduct);
+                    cmd.Parameters.AddWithValue("@Name", product.Name);
+                    cmd.Parameters.AddWithValue("@Description", product.Description);
+                    cmd.Parameters.AddWithValue("@Price", product.Price);
+
+                    // Abre a conexão com o banco de dados
+                    con.Open();
+
+                    // Executa o comando
+                    cmd.ExecuteNonQuery();
+                }
+            }
         }
     }
 }
