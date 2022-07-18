@@ -73,9 +73,16 @@ namespace read_write_files.Models
             File.AppendAllLines(path, line);
         }
 
+        /// <summary>
+        /// Edita um produto existente
+        /// </summary>
+        /// <param name="product">Objeto com os novos dados</param>
         public void Update(Product product)
         {
-            throw new NotImplementedException();
+            List<string> lines = ReadAllLinesCSV(path);
+            lines.RemoveAll(x => x.Split(";")[0] == product.IdProduct);
+            lines.Add(PrepareLine(product));
+            RewriteCSV(path, lines);
         }
 
         /// <summary>

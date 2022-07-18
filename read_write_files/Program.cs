@@ -42,13 +42,13 @@ namespace read_write_files
                         break;
 
                     case "2":
-                        Console.WriteLine("\nDigite o código do produto:\n");
+                        Console.WriteLine("\nDigite o código do produto:");
                         var id = Console.ReadLine();
-                        Console.WriteLine("\nDigite o nome do produto:\n");
+                        Console.WriteLine("\nDigite o nome do produto:");
                         var name = Console.ReadLine();
-                        Console.WriteLine("\nDigite a descrição do produto:\n");
+                        Console.WriteLine("\nDigite a descrição do produto:");
                         var description = Console.ReadLine();
-                        Console.WriteLine("\nDigite o preço do produto:\n");
+                        Console.WriteLine("\nDigite o preço do produto:");
                         var price = Console.ReadLine();
 
                         Product newProduct = new()
@@ -62,8 +62,29 @@ namespace read_write_files
                         product.Create(newProduct);
                         break;
 
+                    case "3":
+                        Console.WriteLine("\nDigite o código do produto que será alterado:");
+                        var idEdited = Console.ReadLine();
+                        Console.WriteLine("\nDigite o novo nome do produto:");
+                        var nameEdited = Console.ReadLine();
+                        Console.WriteLine("\nDigite a descrição do produto:");
+                        var descriptionEdited = Console.ReadLine();
+                        Console.WriteLine("\nDigite o preço do produto (somente valores):");
+                        var priceEdited = Console.ReadLine();
+
+                        Product productEdited = new()
+                        {
+                            IdProduct = idEdited,
+                            Name = nameEdited,
+                            Description = descriptionEdited,
+                            Price = Convert.ToDecimal(priceEdited)
+                        };
+
+                        product.Update(productEdited);
+                        break;
+
                     case "4":
-                        Console.WriteLine("Digite o código do produto que será deletado:");
+                        Console.WriteLine("\nDigite o código do produto que será deletado:");
                         var idRemoved = Console.ReadLine();
 
                         product.Delete(idRemoved);

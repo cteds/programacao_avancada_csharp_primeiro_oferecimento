@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\dev\\read_write_files\\read_write_files.csproj": {}
+    "E:\\Works\\CTEDS\\primeiro oferecimento\\compartilhado\\programacao_avancada_csharp\\read_write_files\\read_write_files.csproj": {}
   },
   "projects": {
-    "E:\\dev\\read_write_files\\read_write_files.csproj": {
+    "E:\\Works\\CTEDS\\primeiro oferecimento\\compartilhado\\programacao_avancada_csharp\\read_write_files\\read_write_files.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\dev\\read_write_files\\read_write_files.csproj",
+        "projectUniqueName": "E:\\Works\\CTEDS\\primeiro oferecimento\\compartilhado\\programacao_avancada_csharp\\read_write_files\\read_write_files.csproj",
         "projectName": "read_write_files",
-        "projectPath": "E:\\dev\\read_write_files\\read_write_files.csproj",
+        "projectPath": "E:\\Works\\CTEDS\\primeiro oferecimento\\compartilhado\\programacao_avancada_csharp\\read_write_files\\read_write_files.csproj",
         "packagesPath": "C:\\Users\\saulo\\.nuget\\packages\\",
-        "outputPath": "E:\\dev\\read_write_files\\obj\\",
+        "outputPath": "E:\\Works\\CTEDS\\primeiro oferecimento\\compartilhado\\programacao_avancada_csharp\\read_write_files\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\saulo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
